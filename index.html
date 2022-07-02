@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width; initial-scale=0.85; maximum-scale=0.85; user-scalable=0;" />
 	<title>CV</title>
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 	</style>
@@ -16,7 +16,12 @@
 <body>
 	<div class="wrap">
 		<div class="left">
-			<img class="image" src="12021-04-09 18-45-27.jpg" alt="me">
+			<div class="image-box">
+				<div class="image">
+					<img src="img/12021-04-09 18-45-27.jpg" alt="me">
+				</div>
+			</div>
+
 
 			<div class="contacts">
 				<h1>Contacts</h1>
@@ -27,6 +32,10 @@
 				<h4>Telegram</h4>
 				<p class="tg">
 					<a href="https://t.me/paramonova_masha" target="_blank">@paramonova_masha</a>
+				</p>
+				<h4>GitHub</h4>
+				<p class="tg">
+					<a href="https://github.com/ParamonovaMasha" target="_blank">ParamonovaMasha</a>
 				</p>
 
 
@@ -39,47 +48,21 @@
 			</div>
 			<div class="language">
 				<h1>Language</h1>
-				<!--<table class="lang">
-					<tr>
-						<td>
-							<p>Russian</p>
-						</td>
-						<td>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-						</td>
-					</tr>
 
-					<tr>
-						<td>
-							<p>English</p>
-						</td>
-						<td>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-							<span>•</span>
-						</td>
-					</tr>
-				</table>-->
-				<div class="table">
+				<div class="table-lang">
 					<div class="lang">
 
 						<span>
-							<p>Russian</p>
+							<h4>Russian</h4>
 						</span>
 						<span>
-							<p>English</p>
+							<h4>English</h4>
 						</span>
 
 
 					</div>
 					<div class="rating">
-						<div class="rus">
+						<div class="lang-item-1">
 
 							<span class="active"></span>
 							<span class="active"></span>
@@ -88,7 +71,7 @@
 							<span class="active"></span>
 						</div>
 
-						<div class="eng">
+						<div class="lang-item-2">
 
 							<span class="active"></span>
 							<span class="active"></span>
@@ -110,7 +93,7 @@
 			</div>
 			<div class="profile">
 				<h1>Profile</h1>
-				<h4>Жизненная дилемма: кем быть и работать?
+				<!--<h4>Жизненная дилемма: кем быть и работать?
 					Еще в школе знакомый открыл для меня фотошоп, а в университете я влюбилась в вёрстку.
 					После окончания учебы в университете я переехала в другой город и пыталась найти дело по душе.
 					Мне посчастливилось найти маленькую фотостудию, где я и по сей день занимаюсь ретушью, подрабатывая
@@ -119,6 +102,10 @@
 					работу.
 					На данный момент работаю фотографом в компании Stark Bikes. Однако желание освоить фронтенд никуда
 					не исчезло.
+				</h4>-->
+				<h4>
+					Life dilemma: who to be in life. Back at school, a friend discovered Photoshop for me but I didn’t take it seriously.  At the university I fell in love with layout. After graduating from university, I moved to another city and tried to find a job that I actually liked.
+					 I was lucky to find a small photo studio, where I still do retouching, moonlighting remotely. Due to life circumstances, I had to return to my hometown and look for a permanent job. I currently work as a photographer for Stark Bikes. However, the desire to master the frontend has not disappeared.
 				</h4>
 			</div>
 
@@ -163,10 +150,102 @@
 
 			<div class="skills">
 				<h1>Skills</h1>
+				<table class="skill-table">
+
+					<tr>
+						<td>
+							<h4>Communication</h4>
+						</td>
+						<td class="skill-item-1">
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h4>Learning capability</h4>
+						</td>
+						<td class="skill-item-2">
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h4>Determination</h4>
+						</td>
+						<td class="skill-item-3">
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+
+						</td>
+					</tr>
+
+
+				</table>
+
+
 
 			</div>
+			<!--<div class="table-skills">
+					<div class="skill">
+
+						<span>
+							<h4>Communication</h4>
+						</span>
+						<span>
+							<h4>Learning capability</h4>
+						</span>
+						<span>
+							<h4>Determination</h4>
+						</span>
+
+
+
+					</div>
+					<div class="rating">
+						<div class="skill-item-1">
+
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span></span>
+						</div>
+
+						<div class="skill-item-2">
+
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+						</div>
+
+						<div class="skill-item-3">
+
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+							<span class="active"></span>
+						</div>
+
+					</div>
+				</div> -->
 
 		</div>
+
+	</div>
 
 	</div>
 	</div>
