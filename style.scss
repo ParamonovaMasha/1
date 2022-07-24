@@ -54,9 +54,8 @@ body {
 .wrap {
   display: flex;
   padding: 10px;
-  width: 100%;
   max-width: 70rem;
-  min-height: 100%;
+  height: auto;
   box-shadow: -1px 1px 10px 1px #c381b3;
 }
 
@@ -181,7 +180,6 @@ body {
   flex: 1;
   @include font();
   min-width: min-content;
-  height: auto;
   background-color: var(--color-white);
   padding: 40px 50px;
   text-align: left;
