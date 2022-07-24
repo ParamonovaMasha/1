@@ -78,7 +78,7 @@ body {
   overflow: hidden;
 }
 
-.image-box::before {
+/* .image-box::before {
   content: "";
   position: absolute;
   inset: -3px 70px;
@@ -106,7 +106,7 @@ body {
   background: var(--color-gray);
   border-radius: 50%;
   z-index: 1;
-}
+} */
 
 .image {
   position: absolute;
