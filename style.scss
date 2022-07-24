@@ -80,35 +80,35 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-.image-box::before {
-  content: "";
-  position: absolute;
-  inset: -3px 70px;
-  background: linear-gradient(315deg, #12758e, #f35dcd);
-  transition: 0.5s;
-  animation: animate 5s linear infinite;
-}
-.image-box:hover::before {
-  inset: -3px 0px;
-}
+// .image-box::before {
+//   content: "";
+//   position: absolute;
+//   inset: -3px 70px;
+//   background: linear-gradient(315deg, #12758e, #f35dcd);
+//   transition: 0.5s;
+//   animation: animate 5s linear infinite;
+// }
+// .image-box:hover::before {
+//   inset: -3px 0px;
+// }
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes animate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
-.image-box::after {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  background: var(--color-gray);
-  border-radius: 50%;
-  z-index: 1;
-}
+// .image-box::after {
+//   content: "";
+//   position: absolute;
+//   inset: 5px;
+//   background: var(--color-gray);
+//   border-radius: 50%;
+//   z-index: 1;
+// }
 .image {
   position: absolute;
   inset: 10px;
