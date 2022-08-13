@@ -16,6 +16,8 @@
 body {
   display: flex;
   justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   margin: 10px auto;
@@ -24,7 +26,7 @@ body {
 .wrap {
   display: flex;
   padding: 10px;
-  max-width: 70rem;
+  max-width: 70em;
   min-height: 100%;
   box-shadow: -1px 1px 10px 1px #c381b3;
 }
@@ -67,38 +69,38 @@ body {
   letter-spacing: 3px;
   margin-top: 1.3em;
 }
-.left p {
+.left p,
+.left ul {
   font-family: Poppins;
   font-size: small;
-  font-weight: normal;
+  font-weight: 500px;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: 3px;
+  margin-top: 1.3em;
 }
 @media (max-width: 768px) {
   .left {
     display: flex;
     flex-direction: row-reverse;
-    margin: 10px auto;
+    gap: 50px;
+    height: 150px;
     width: 100%;
-    height: 130px;
+    padding: 10px;
+    margin: 0 auto;
   }
   .left .education,
-.left .language {
+.left .language,
+.left h1,
+.left .phone,
+.left .email {
     display: none;
   }
   .left .image-box {
-    margin: -20px 10px;
-    width: 200px;
-    height: 200px;
+    margin: 0px;
   }
-  .left .contacts {
-    margin-top: -30px;
-  }
-  .left .contacts h1,
-.left .contacts .phone,
-.left .contacts .email {
-    display: none;
+  .left .contacts p {
+    margin: 0px;
   }
 }
 
@@ -195,6 +197,8 @@ body {
   min-width: min-content;
   height: auto;
   background-color: var(--color-white);
+  color: var(--color-gray);
+  font-weight: 600;
   padding: 40px 50px;
   text-align: left;
 }
@@ -219,13 +223,15 @@ body {
   letter-spacing: 3px;
   margin-top: 1.3em;
 }
-.right p {
+.right p,
+.right ul {
   font-family: Poppins;
   font-size: small;
-  font-weight: normal;
+  font-weight: 500px;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: 3px;
+  margin-top: 1.3em;
 }
 
 .info {
@@ -243,57 +249,10 @@ body {
   margin-left: -30px;
 }
 
-.skill-table {
-  border-collapse: separate;
-  border-spacing: 10px 0px;
-  margin-left: -10px;
+ul {
+  margin-left: 10px;
 }
 
-[class^=skill-item] {
-  align-items: end;
-}
-
-.skill-item-1 span {
-  padding: 3px;
-  font-size: 35px;
-  letter-spacing: -5px;
-  color: rgb(112, 112, 112);
-}
-
-.skill-item-1 > span:before {
-  content: "•";
-}
-
-.skill-item-1 > span.active {
-  color: rgb(0, 0, 0);
-}
-
-.skill-item-2 span {
-  padding: 3px;
-  font-size: 35px;
-  letter-spacing: -5px;
-  color: rgb(112, 112, 112);
-}
-
-.skill-item-2 > span:before {
-  content: "•";
-}
-
-.skill-item-2 > span.active {
-  color: rgb(0, 0, 0);
-}
-
-.skill-item-3 span {
-  padding: 3px;
-  font-size: 35px;
-  letter-spacing: -5px;
-  color: rgb(112, 112, 112);
-}
-
-.skill-item-3 > span:before {
-  content: "•";
-}
-
-.skill-item-3 > span.active {
-  color: rgb(0, 0, 0);
-}/*# sourceMappingURL=style.css.map */
+.hobbies {
+  float: right;
+  margin-top: -225px;}/*# sourceMappingURL=style.css.map */
