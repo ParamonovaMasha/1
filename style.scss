@@ -21,6 +21,7 @@
     letter-spacing: 3px;
     line-height: 50px;
     text-decoration: 2px underline;
+    -webkit-text-decoration: 2px underline;
     margin-top: 1em;
   }
 
@@ -74,6 +75,9 @@ body {
   @include font();
   color: var(--color-white);
   text-align: center;
+  .contacts p {
+    margin: 0px;
+  }
 
   @media (max-width: 680px) {
     display: flex;
@@ -93,10 +97,6 @@ body {
     }
 
     .image-box {
-      margin: 0px;
-    }
-
-    .contacts p {
       margin: 0px;
     }
   }
@@ -176,38 +176,6 @@ body {
   text-shadow: 1px 1px 1px #c8c7c7;
 }
 
-.table-lang {
-  display: flex;
-  place-content: center;
-  gap: 10px;
-}
-.lang {
-  margin-top: -6px;
-  line-height: 1.6;
-}
-.lang-item-1 span {
-  font-size: 35px;
-  padding-top: 15px;
-  color: rgb(112, 112, 112);
-}
-.lang-item-1 > span:before {
-  content: "•";
-}
-.lang-item-1 > span.active {
-  color: rgb(255, 255, 255);
-}
-
-.lang-item-2 span {
-  font-size: 35px;
-  color: rgb(112, 112, 112);
-}
-.lang-item-2 > span:before {
-  content: "•";
-}
-.lang-item-2 > span.active {
-  color: rgb(255, 255, 255);
-}
-
 .right {
   flex: 1;
   @include font();
@@ -242,4 +210,3 @@ body {
 ul {
   margin-left: 10px;
 }
-
