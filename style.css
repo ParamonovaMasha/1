@@ -56,8 +56,8 @@ body {
   font-style: normal;
   letter-spacing: 3px;
   line-height: 50px;
+  text-decoration: 2px underline;
   -webkit-text-decoration: 2px underline;
-          text-decoration: 2px underline;
   margin-top: 1em;
 }
 .left h4 {
@@ -79,6 +79,9 @@ body {
   letter-spacing: 3px;
   margin-top: 1.3em;
 }
+.left .contacts p {
+  margin: 0px;
+}
 @media (max-width: 680px) {
   .left {
     display: flex;
@@ -97,9 +100,6 @@ body {
     display: none;
   }
   .left .image-box {
-    margin: 0px;
-  }
-  .left .contacts p {
     margin: 0px;
   }
 }
@@ -152,44 +152,6 @@ body {
   text-shadow: 1px 1px 1px #c8c7c7;
 }
 
-.table-lang {
-  display: flex;
-  place-content: center;
-  gap: 10px;
-}
-
-.lang {
-  margin-top: -6px;
-  line-height: 1.6;
-}
-
-.lang-item-1 span {
-  font-size: 35px;
-  padding-top: 15px;
-  color: rgb(112, 112, 112);
-}
-
-.lang-item-1 > span:before {
-  content: "•";
-}
-
-.lang-item-1 > span.active {
-  color: rgb(255, 255, 255);
-}
-
-.lang-item-2 span {
-  font-size: 35px;
-  color: rgb(112, 112, 112);
-}
-
-.lang-item-2 > span:before {
-  content: "•";
-}
-
-.lang-item-2 > span.active {
-  color: rgb(255, 255, 255);
-}
-
 .right {
   flex: 1;
   min-width: -webkit-min-content;
@@ -210,8 +172,8 @@ body {
   font-style: normal;
   letter-spacing: 3px;
   line-height: 50px;
+  text-decoration: 2px underline;
   -webkit-text-decoration: 2px underline;
-          text-decoration: 2px underline;
   margin-top: 1em;
 }
 .right h4 {
