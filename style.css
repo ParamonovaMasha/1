@@ -102,6 +102,9 @@ body {
   .left .image-box {
     margin: 0px;
   }
+  .left .image {
+      border: none;
+    }
 }
 
 .image-box {
